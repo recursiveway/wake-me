@@ -10,12 +10,13 @@ export default function TabLayout() {
 
   return (
     <Tabs
+    
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name="Alarm"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
@@ -24,7 +25,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="Setting"
         options={{
           title: 'Explore',
           tabBarIcon: ({ color, focused }) => (
